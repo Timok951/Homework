@@ -31,8 +31,9 @@ namespace Calculator
                         Console.WriteLine("Введите первое число"); input = Console.ReadLine(); number1 = Convert.ToInt32(input); Console.WriteLine("Введите второе число"); input = Console.ReadLine(); number2 = Convert.ToInt32(input); Console.WriteLine(number1 / number2);
                         break;
                     case 5:
-                        Console.WriteLine("Введите первое число"); input = Console.ReadLine(); number1 = Convert.ToInt32(input); Console.WriteLine("Введите степень"); input = Console.ReadLine(); number2 = Convert.ToInt32(input); int number3 = number1; for(int i = 0; i < number2-1; i++) {
+                        Console.WriteLine("Введите первое число"); input = Console.ReadLine(); number1 = Convert.ToInt32(input); Console.WriteLine("Введите степень"); input = Console.ReadLine(); number2 = Convert.ToInt32(input); int number3 = number1; int b = 1; while( b < number2) {
                             number1 = number1 * number3;
+                            b++;
                         }
                         Console.WriteLine(number1);
                         break;
